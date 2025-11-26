@@ -1,0 +1,29 @@
+Total games: 16598
+Total genres: 12
+Total publishers: 578
+Year range: 1980-2020
+
+Sales statistics for NA_Sales (in millions)
+Mean global sales: 0.265
+Median global sales: 0.080
+Mode global sales: [0.0]
+
+Sales statistics for EU_Sales (in millions)
+Mean global sales: 0.147
+Median global sales: 0.020
+Mode global sales: [0.0]
+
+Sales statistics for JP_Sales (in millions)
+Mean global sales: 0.078
+Median global sales: 0.000
+Mode global sales: [0.0]
+
+Sales statistics for Other_Sales (in millions)
+Mean global sales: 0.048
+Median global sales: 0.010
+Mode global sales: [0.0]
+
+Sales statistics for Global_Sales (in millions)
+Mean global sales: 0.537
+Median global sales: 0.170
+Mode global sales: [0.02]
