@@ -1,0 +1,22 @@
+Output:
+Root Mean Squared Error: 1.8496 million units
+Mean Absolute Error: 0.7125 million units
+Min error:  -1.8553 (best case)
+Max error:  82.3303 (worst case)
+25th percentile error: -0.4778
+50th percentile error: -0.0826 (median)
+75th percentile error: 0.3944
+==============================
+
+
+Analysis:
+This model's prediction is off by about 1.86 million copies for RMSE, because the only two features are publisher and genre, there is a lot of variance. This is an expected output as genre and publisher aren't enough to predict whether or not a game will have high global sales.
+
+A typical prediction is off by about 0.71 million copies. This is also expected because of the features and noise in game data.
+
+For the min error, the model predicted about 1.85 million copies too high. The worst error, the model underpredicted by 82.3303 million copies.
+
+The model is within about half a million units of the true sales, and the errors are fairly balanced (some a bit high, some a bit low).
+
+Overall, the model is reasonably okay for the majority of games (the median error is close to zero), but struggles with extreme cases. Due to the nature of the data and the limited features, regularization would not help much. To improve the performance of prediction, more than genre and publisher would need to be taken into account.
+
