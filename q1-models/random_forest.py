@@ -14,17 +14,15 @@ def testError(predictions, y):
 if __name__ == "__main__":
     df = pd.read_csv("vgsales.csv")
 
-    # Features: "Platform", "Year", "Genre", "Publisher", "NA_Sales", 
-    # "EU_Sales", "JP_Sales", "Other_Sales"
-    features = [ "Platform", "Year", "Genre", "Publisher", "NA_Sales", 
-                "EU_Sales", "JP_Sales", "Other_Sales"]
+    # Features: "Platform", "Year", "Genre", "Publisher"
+    features = ["Genre", "Publisher"]
     
     X = df.loc[:, features].copy()
 
     # Target: Global Sales
     y = df["Global_Sales"]
 
-    categoricalFeatures = ["Platform", "Genre", "Publisher"]
+    categoricalFeatures = ["Genre", "Publisher"]
     for col in categoricalFeatures: 
         encoder = LabelEncoder()           # creates an encoder per category column
         X[col] = encoder.fit_transform(X[col])
@@ -39,4 +37,6 @@ if __name__ == "__main__":
 
     error = testError(predictions, y_test)
 
-    print("Average units of error: ", error)
+    print("Average Mean Squared Error: ", error)
+    avg_error = np.mean(np.abs(predictions - y_test.values))
+    print("Average error: ", avg_error)

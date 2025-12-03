@@ -1,3 +1,3 @@
-Average units of error in millions :  0.7363661784671174
-
-Means that the model is off by an average of 730 thousand copies per game
+Mean squared error of error in millions: 3.853724216305973
+Average error is: 0.5356489229546717
+Means that the model is off by an average of 535.6 thousand copies per game
