@@ -1,0 +1,3 @@
+Average units of error in millions :  0.7363661784671174
+
+Means that the model is off by an average of 730 thousand copies per game
