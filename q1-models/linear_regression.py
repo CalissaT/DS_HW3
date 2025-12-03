@@ -66,7 +66,7 @@ def print_error_report(y_true, y_pred, label=""):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("vgsales.csv")
+    df = pd.read_csv("../raw-data/vgsales.csv")
     df_encoded, genre_cols = encode(df)
     X_train, y_train, X_test, y_test, feature_cols = get_data(df_encoded, genre_cols)
 

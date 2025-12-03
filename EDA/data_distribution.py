@@ -87,7 +87,7 @@ def print_statistics(df):
     
 
 if __name__ == "__main__":
-    df = pd.read_csv("vgsales.csv")
+    df = pd.read_csv("../raw-data/vgsales.csv")
 
     #plot_by_genre(df)
     #plot_by_totalsales(df)

@@ -12,7 +12,7 @@ def testError(predictions, y):
     return E_test / len(predictions)
 
 if __name__ == "__main__":
-    df = pd.read_csv("vgsales.csv")
+    df = pd.read_csv("../raw-data/vgsales.csv")
 
     # Features: "Platform", "Year", "Genre", "Publisher", "NA_Sales", 
     # "EU_Sales", "JP_Sales", "Other_Sales"
