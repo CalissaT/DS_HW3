@@ -1,3 +1,5 @@
+## Generated all of the graphics in Graphs_3B
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
